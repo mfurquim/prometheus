@@ -18,6 +18,9 @@ ENV STATIC_SCRAPE_TARGETS ''
 ENV SCHEME_SCRAPE_TARGETS ''
 ENV DNS_SCRAPE_TARGETS ''
 
+ENV http_proxy ""
+ENV https_proxy ""
+
 USER root
 ADD rules /etc/prometheus
 ADD startup.sh /
